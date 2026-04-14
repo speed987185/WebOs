@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0px;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+     background: rgb(255, 105, 180);
+    color: white;
+    font-family: "Press Start 2P",monospace;
+}
+
+.setup-screen{
+    width: min(94vw, 760px);
+    border: 1px solid navy;
+    border-radius: 14px;
+    padding: 24px;
+    background: rgb(255, 105, 180);
+    box-shadow: 0 0 24px rgb(160, 111, 111);
+    text-align: center;
+}
+
+.setup-logo{
+    margin: 0 0 14px;
+    font-size: clamp(2.6rem, 9vw, 4.4rem);
+    line-height: 1;
+    text-align: center;
+}
+
+.setup-title{
+    margin: 0 0 10px;
+    font-size: clamp(0.75rem, 2.1vw, 1.05rem);
+    line-height: 1.7;
+}
+
+.setup-subtitle{
+    margin: 0 0 18;
+    font-size: clamp(0.58rem, 1.5vw, 0.72rem);
+    line-height: 1.8;
+    color: #655656;
+}
+
+.panel{
+
+    display: none;
+    border: 1px solid navy;
+    border-radius: 14px;
+    padding: 18px  14px;
+    margin: 0 auto;
+    max-width: 620px;
+
+}
+
+.panel.active {
+  display: block;
+}
+
+.panel h2{
+    margin: 0 0 14px;
+    font-size: clamp(0.6rem, 1.7vw, 0.82rem);
+    line-height: 1.8;
+    color: white;
+}
+
+
+ .helper-text{
+
+    display: block;
+    margin-bottom: 10px;
+    font-size: clamp(0.52rem, 1.4vw, 0.66rem);
+    line-height: 1.7;
+    color: #ffffff;
+ }
+
+ label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: clamp(0.52rem, 1.4vw, 0.66rem);
+    line-height: 1.7;
+    color: #ffffff;
+ }
+
+ .setup-input{
+    width: min(88%, 360px);
+    padding: 10px;
+    font-family: inherit;
+    font-size: 0.6rem;
+    border: 1px solid #ffffff;
+    margin-bottom:14px;
+
+ }
+
+ .wifi-list{
+    display: grid;
+    gap: 20px;
+    width: min(94%, 420px);
+    margin: 0 auto 14px;
+ }
+
+ .wifi-option,.setup-btn{
+
+    border: 1px solid navy;
+    border-radius: 8px;
+    background: plum;
+    color: white;
+    font-family: inherit;
+    font-size: 0.58rem;
+    padding: 10px 12px;
+    cursor: pointer;
+ }
+
+ .wifi-option:hover,
+.setup-btn:hover {
+  background: rgb(152, 102, 152);
+}
+
+.wifi-option.selected {
+
+    border-color: yellow;
+    box-shadow: 0 0 2px lime;
+}
+
+#status-text{
+
+   min-height: 1.4em;
+   margin-top: 14px;
+   font-size: clamp(0.5rem, 1.3vw, 0.62rem);
+   color: chartreuse;
+}
+
+#sloth-fade{
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-size: clamp(4rem, 18vw, 11rem);
+    background: linear-gradient(135deg, rgb(255, 105, 180), rgb(90, 20, 80));
+    opacity: 0;
+    pointer-events: none;
+}
+
+#sloth-fade.play {
+    animation: slothfadeout 1.6s ease-in forwards;
+}
+
+@keyframes slothfadeout {
+    0%{
+        opacity: 1;
+        transform: scale(1);
+
+    }
+
+    100%{
+        opacity: 0;
+        transform: scale(1.1);
+    }
+}
+
+

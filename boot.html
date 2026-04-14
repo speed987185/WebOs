@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sloth OS Boot</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/webp" href="sloth.webp">
+  <link rel="stylesheet" href="./boot.css" />
+
+
+</head>
+
+<body>
+  <main class="boot-screen">
+
+    <p class="emoji">🦥</p>
+
+    <div class="spinner"></div>
+
+    <h1 class="title">Booting up your Sloth OS</h1>
+    <p>made by man btw</p>
+
+  </main>
+
+  <script>
+
+    const BOOT_TIME = 3000;
+    setTimeout(() => {
+        window.location.replace("./setup.html");
+    }, BOOT_TIME);
+
+  </script>
+
+  
+</body>
+</html>

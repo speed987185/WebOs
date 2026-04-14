@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+     <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+    <title>Sloth-0S-Setup</title>
+    <link rel="icon" type="image/webp" href="sloth.webp">
+
+    <link rel="stylesheet" href="./setup.css">
+
+  </head>
+
+  <body>
+
+    <main class="setup-screen">
+
+        <p class="setup-logo">🦥</p>
+        <br><br>
+        <h1 class="setup-title">Sloth OS Setup</h1>
+        <br>
+        <p class="setup-subtitle">Set yourself a perfect desktop</p>
+
+     <section class="panel active">
+      <h2>Choose your country</h2>
+
+      <label for="country">Country</label>
+
+      <select id="country" class="setup-input">
+
+        <option value="">Select your continents:</option>
+        <option>Asia</option>
+        <option>Africa</option>
+        <option>Europe</option>
+        <option>North America</option>
+        <option>South America</option>
+        <option>Australia</option>
+        <option>Antarctica</option>
+
+      </select>
+
+      <button id="country-next" class="setup-btn">Next</button>
+
+     </section>
+
+     <section class="panel">
+
+      <h2>Connect wifi</h2>
+
+      <p class="setup-subtitle">choose one open network </p>
+
+      <div class="wifi-list">
+
+        <button class="wifi-option">Sloth-Free-Wifi</button>
+
+        <button class="wifi-option">HC_free-Wifi</button>
+
+        <button class="wifi-option">Resturant-Wifi</button>
+      </div>
+
+      <button id="wifi-next"class="setup-btn">Connect & continue</button>
+
+      </section>
+
+      <section class="panel">
+        <h2>Ready to Jump In</h2>
+
+        <p class="helper-text">Everthing okays . Press ok to go to home. </p>
+
+        <button id="finish-setup" class="setup-btn">Ok.</button>
+
+      </section>
+
+      <p id="status-text"></p>
+      <div id="sloth-fade">🦥</div>
+
+      
+    </main>
+
+    <script src="./setup.js"></script>
+
+
+  </body>
+</html>
